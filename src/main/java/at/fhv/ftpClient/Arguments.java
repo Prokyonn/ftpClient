@@ -3,6 +3,8 @@ package at.fhv.ftpClient;
 import com.beust.jcommander.Parameter;
 
 public class Arguments {
+    @Parameter(names = {"-server", "-address"}, description = "Server Address")
+    private String server;
     @Parameter(names = {"-user", "-username"}, description = "FTP Username")
     private String user;
     @Parameter(names = {"-pw", "-password"}, description = "FTP Password", password = true)
@@ -15,6 +17,14 @@ public class Arguments {
     private int intervall;
     @Parameter(names = {"-log"}, description = "Path to the Logfile")
     private String logFilePath;
+
+    public String getServer() {
+        return server;
+    }
+
+    public void setServer(String server) {
+        this.server = server;
+    }
 
     public String getUser() {
         return user;

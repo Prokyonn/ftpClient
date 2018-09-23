@@ -2,6 +2,11 @@
 Console Application which downloads all files from a specific folder. If a file is sucessfully downlaoded, the file will be deleted.<br>
 The application can be configured with the following mandatory arguments:
 <ul>
+ <li> -server
+        <ul>
+            <li>Specifies the address to the FTP-Server
+            <br>e.g. -server "127.0.0.1"
+        </ul>
     <li> -user
         <ul>
             <li>Specifies the username to login to the FTP-Server

@@ -29,7 +29,7 @@ public class Main {
         boolean isRunning = true;
 
         do {
-            FtpClient ftpClient = new FtpClient("127.0.0.1", 21, arguments.getUser(), arguments.getPassword());
+            FtpClient ftpClient = new FtpClient(arguments.getServer(), 21, arguments.getUser(), arguments.getPassword());
             try {
                 boolean isConnected = ftpClient.open();
 
