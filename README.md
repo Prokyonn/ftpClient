@@ -1,16 +1,16 @@
 # FTPClient
 Console Application which downloads all files from a specific folder. If a file is sucessfully downlaoded, the file will be deleted.<br>
-The application can be configured with the following arguments:
+The application can be configured with the following mandatory arguments:
 <ul>
     <li> -user
         <ul>
-            <li>Specifies the username to login onto the FTP-Server
+            <li>Specifies the username to login to the FTP-Server
             <br>e.g. -user "testuser"
         </ul>
     <li>
     <li> -pw "test"
         <ul>
-            <li>Specifies the password to login onto the FTP-Server
+            <li>Specifies the password to login to the FTP-Server
             <br>e.g. -pw "test"
         </ul>
     <li> -source 
