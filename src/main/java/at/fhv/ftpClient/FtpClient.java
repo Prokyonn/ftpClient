@@ -37,7 +37,8 @@ public class FtpClient {
             @Override
             public void write(byte[] b, int off, int len) {
                 String str = new String(b, off, len);
-                Logger.info(str.trim());
+                if (!str.startsWith("PASS"))
+                    Logger.info(str.trim());
             }
 
             @Override
